@@ -1,5 +1,7 @@
 package com.fmgarcia.taurus.templates.controlller;
 
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,5 +13,10 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping("/templates")
 public class EmailTemplateController {
+	
+	@GetMapping
+	public ResponseEntity<String> getAllEmailTemplates(){
+		return ResponseEntity.ok().body("Respondiendo desde Email-Templates");
+	}
 
 }

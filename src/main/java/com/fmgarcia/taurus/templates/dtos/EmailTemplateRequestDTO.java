@@ -2,7 +2,7 @@ package com.fmgarcia.taurus.templates.dtos;
 
 import jakarta.validation.constraints.NotNull;
 
-public record TemplateRequestDTO(
+public record EmailTemplateRequestDTO(
 		@NotNull
 		String name,
 		
