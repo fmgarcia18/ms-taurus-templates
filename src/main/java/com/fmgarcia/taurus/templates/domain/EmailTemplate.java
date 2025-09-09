@@ -48,7 +48,6 @@ public class EmailTemplate implements Serializable{
 
 	@NotNull
 	@Column(columnDefinition = "text")
-	@Lob()
 	private String content;
 
 	@NotNull
